@@ -11,10 +11,12 @@
 			#define V8_API __declspec(dllimport) //this would allow for importing into sandbox
 																				//if im wrong and wasted your time please delete this
 		#endif
-#else
-	#error DECL INCOMPATIBLE WITH NON-WINDOWS OPERATING SYSTEMS"
+	#else
 
-	#endif
+		//#error DECL INCOMPATIBLE WITH NON-WINDOWS OPERATING SYSTEMS   ...maybe nothing will happen?
+	
+		#endif
+
 
 
 
